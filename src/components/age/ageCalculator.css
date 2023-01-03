@@ -1,0 +1,42 @@
+.age-container{
+    
+    text-align: center;  
+    height: 200px;  
+    width: 600px;
+    margin: auto;
+    margin-top: 200px;
+    padding: auto;
+}
+
+.age-input{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    justify-content: space-evenly;
+    background-color: gray;
+    border-radius: 50px;
+}
+
+.result{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fecha{
+    width: 150px;
+    height: 40px;
+    margin: auto;
+}
+
+.boton{
+    margin: auto;
+}
+
+.label{
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    margin: auto;
+    
+}

@@ -1,0 +1,47 @@
+nav{
+    /* height: 50px; */
+    margin: auto;
+    height: auto;
+    border-bottom: 1px solid black;
+    width: 95%;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo{
+    margin: 10px auto;
+    display: flex;    
+}
+
+img{
+    width: 82px;
+    height: 80px;
+}
+
+p{
+    font-family: 'Comfortaa';   
+    font-size: 28.4444px;
+    line-height: 32px;   
+}
+
+a{
+    margin: 25px;
+    font-family: 'Montserrat';  
+    font-weight: 700;
+    font-size: 100%;
+    line-height: 24px;  
+    text-decoration: none;    
+}
+
+.izq{
+    margin: auto;
+}
+
+.der{
+    margin: auto;
+}

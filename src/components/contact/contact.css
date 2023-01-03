@@ -1,0 +1,54 @@
+.contact-container{
+    margin: auto;
+    width: 600px;
+    height: 500px;  
+}
+
+.inputs-about{
+    width: 500px;
+    margin: auto;   
+}
+
+.inputs-about>input:nth-child(1){    
+    width: 240px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.inputs-about>input:nth-child(2){    
+    width: 240px;
+    
+}
+
+.inputs-about>input:nth-child(3){    
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.inputs-about>textarea:nth-child(4){    
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button{
+    display: block;
+    background-color: #18A0FB;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 40px;
+    width: 130px;
+}
+
+h4{
+    margin-left: 40px;
+}
+
+h2{
+    text-align: center;
+}
+
+.form{
+    border: 1px solid black;
+    padding: 10px;
+}
