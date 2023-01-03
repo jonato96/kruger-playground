@@ -1,5 +1,5 @@
 import './imcCalculator.css'
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 const ImcCalculator = () =>{
     const [peso, setPeso] = useState(0)
@@ -36,9 +36,9 @@ const ImcCalculator = () =>{
             setColor("red")
         }
     }
-    useEffect(() => {
-        clasificar()        
-    }, [peso,altura])
+    // useEffect(() => {
+    //     clasificar()        
+    // }, [peso,altura])
 
     return(
         <div className="imc-container">
@@ -49,7 +49,8 @@ const ImcCalculator = () =>{
             <label>Ingrese su altura</label>   
             <input type="range" min='120' max='230' onChange = {(e)=>setAltura(e.target.value)} value={altura}/>
             <span>{altura}</span>
-            <br/>            
+            <br/>  
+            <button style={{margin: `auto`}} onClick={clasificar}>Calculate</button>          
             <br/>
             <label>{resultado.toFixed(2)}</label>
             <br/>
