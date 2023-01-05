@@ -1,8 +1,13 @@
 import './header.css';
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 
 const Header = ()=>{
+    const [active, setActive] = useState('burguer-menu')
+    const navToggle = () =>{
+        active === 'burguer-menu' ? setActive('burguer-menu burguer-active') : setActive('burguer-menu')
+    }
     return(
         // <div className='header'>
         //     <img src='https://scontent.fesm2-1.fna.fbcdn.net/v/t1.18169-9/21617587_1479105895458113_303468523533041023_n.png?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=oBLwkf4SkpYAX_nzjyM&_nc_ht=scontent.fesm2-1.fna&oh=00_AfDjGdqQ4ecEyVikTZFTxW3zULfgAi0Qa1KBuzRSzmKwfg&oe=63DB0EE2' alt='kruger logo'/>
@@ -36,7 +41,13 @@ const Header = ()=>{
                         textDecoration: isActive ? 'solid underline black 1px' : 'none', 
                     })} to='/contact'>Contact</NavLink>
                 </div>
-            </div>            
+                <div onClick={navToggle} className='burguer-menu'>
+                    <div className='line1'></div>
+                    <div className='line2'></div>
+                    <div className='line3'></div>
+                </div>                    
+            </div>
+                    
         </nav>        
     )
 }

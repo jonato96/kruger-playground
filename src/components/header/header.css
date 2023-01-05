@@ -8,7 +8,7 @@ nav{
 
 .header-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 90%;
     margin: 0 auto;
 }
@@ -44,4 +44,40 @@ a{
 
 .der{
     margin: auto;
+}
+
+.burguer-menu div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: darkgray;
+}
+
+.burguer-menu{
+    cursor: pointer;
+    margin: auto;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .burguer-menu{
+        display: block;
+    }
+    .header-container{
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        width: 50%;
+        height: 93vh;
+        background-color: darkgray;
+        flex-direction: column;
+        /* transform: translateX(100%); */
+    }
+    .logo{
+        display: none;
+    }
+}
+
+.burguer-active{
+    transform: translateX(0);
 }
