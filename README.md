@@ -4,7 +4,7 @@
 
 - In this repository you can find my PlayGroundApp with all my projects
 
-<img src='src/assets/mock.jpg'>
+<img src='src/assets/mock.png'>
 
 ## Built With
 
